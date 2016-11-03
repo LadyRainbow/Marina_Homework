@@ -1,0 +1,211 @@
+body {
+	margin: 0 auto;
+	color: #000;
+	width: 770px;
+	background: #fff;
+	font: 12px/1 arial, helvetica, sans-serif;
+}
+/* General reset */
+img {
+	border: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+@font-face {
+	font-family: MesquiteStd;
+	src: url('../fonts/MesquiteStd.otf');
+}
+/* General settings */
+
+/*HEADER START*/
+
+.header {
+	height: 200px;
+	background: url('../img/header-bg.png') no-repeat;
+	position: relative;
+}
+
+h1 {
+	font-family: MesquiteStd;
+	font-size: 58px;
+	color: #fff;
+	text-shadow: 2px 1px 2px black;
+	position: absolute;
+	bottom: 1px;
+	left: 185px;
+}
+
+.icon-nav {
+	position: absolute;
+	top: 5px;
+	right: 28px;
+}
+
+.icon-nav li {
+	float: left;
+}
+
+.icon-nav li + li {
+	margin-left: 27px;
+}
+
+.icon-nav li a {
+	display: inline-block;
+	width: 11px;
+	background: url('../img/sprite-ic.png') no-repeat;
+}
+
+.icon-nav li a.busket {
+	width: 14px;
+	height: 9px;
+	background-position: 0px -9px;
+}
+
+.icon-nav li a.busket:hover {
+	background-position: -0px -0px;
+}
+
+.icon-nav li a.mail {
+	height: 8px;
+	background-position: 0px -46px;
+}
+
+.icon-nav li a.mail:hover {
+	background-position: -0px -38px;
+}
+
+.icon-nav li a.home {
+	height: 10px;
+	background-position: 0px -28px;
+}
+
+.icon-nav li a.home:hover {
+	background-position: -0px -18px;
+}
+
+.icon-nav li a.search {
+	height: 11px;
+	background-position: 0px -65px;
+}
+
+.icon-nav li a.search:hover {
+	background-position: -0px -54px;
+}
+
+.header-nav {
+	height: 26px;
+	background: url('../img/menu-bg.png') no-repeat;
+}
+
+.header-nav ul {
+	float: right;
+	line-height: 26px;
+}
+
+.header-nav ul li {
+	float: left;
+	margin: 0 16.67px;
+}
+
+ul li a {
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*HEADER END*/
+
+/*MAIN START*/
+
+.main h2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666699;
+}
+
+.main p {
+	font-size: 10px;
+	margin-top: 15px;
+	line-height: 120%;
+	text-align: justify;
+}
+
+.block1 {
+	height: 147px;
+	background: url('../img/polosa-fon-bg.png');
+	border-bottom: solid 1px #2d2c83;
+}
+
+.sidebar {
+	height: 123px;
+	width: 168px;
+	background: url('../img/saidmenu-bg.png');
+	float: left;
+	padding: 24px 0 0 24px;
+	margin-right: 20px;
+}
+
+.sidebar li + li {
+	margin-top: 5px;
+}
+
+.sidebar li a {
+	background: url('../img/arrow-ic.png') no-repeat left center;
+	padding-left: 19px;
+}
+
+.text {
+	padding: 17px 20px 0 0;
+	overflow: hidden;
+}
+.block2 {
+	background-color: #cfe6fd;
+	overflow: hidden;
+}
+
+.block2 img {
+	float: left;
+	margin-right: 20px;
+}
+
+.block2 .text a {
+	font-size: 10px;
+	font-weight: bold;
+	color: #666699;
+	float: right;
+	margin-top: 16px;
+}
+
+/*MAIN END*/
+
+/*FOOTER START*/
+
+.footer {
+	height: 26px;
+	background: url('../img/footer-bg.png') no-repeat;
+	padding-right: 20px;
+	text-align: right;
+	line-height: 26px;
+}
+
+.footer span {
+	color: #fff;
+	font-size: 10px;
+	font-family: tahoma;
+}
+
+/*FOOTER END*/
