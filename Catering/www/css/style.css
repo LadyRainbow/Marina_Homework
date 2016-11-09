@@ -36,9 +36,15 @@ ul {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: 'lobster_1.4regular';
+
 }
+
+input, button, textarea, select {
+	outline: none;
+}
+
 /* General settings */
 
 /*DEFAULT STYLE*/
@@ -68,9 +74,29 @@ margin-left: -4px;
 	vertical-align: middle;
 }
 
-.header .container {
-	position: relative;
+.form-control {
+	width: 100%;
+	border: 2px solid #b5b5b5;
+	background: #fff;
+	height: 34px;
+	color: #5a5959;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	padding-left: 14px;
 }
+
+.form-control:focus {
+	border-color: #bc2336;
+}
+::-webkit-input-placeholder {color:#5a5959;}
+::-moz-placeholder          {color:#5a5959;}/ Firefox 19+ /
+:-moz-placeholder           {color:#5a5959;}/ Firefox 18- /
+:-ms-input-placeholder      {color:#5a5959;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 
 /*HEADER START*/
 
@@ -88,14 +114,19 @@ z-index: 999;
 	float: left;
 	margin-top: 10px;
 }
+
 ul.menu-nav {
 	display: inline-block;
-	margin-left: 113px;
-	line-height: 116px;
+	margin-top: 50px;
+	margin-left: 200px;
 }
 
-li {
-	float: left;
+ul.icon-nav li {
+	display: inline-block;
+}
+
+ul.menu-nav li {
+	display: inline-block;;
 }
 
 ul.menu-nav li + li {
@@ -107,9 +138,9 @@ ul.menu-nav li + li {
 }
 
 .header ul.icon-nav {
-	position: absolute;
-	top: 45px;
-	right: 14px;
+	float: right;
+	margin-top: 45px;
+	margin-right: 15px;
 }
 
 .header ul.icon-nav li + li {
@@ -170,6 +201,10 @@ text-align: center;
 	line-height: 49px;
 }
 
+.btn:hover {
+	background-color: #bc2336;
+}
+
 .about_us {
 	margin-top: 64px;
 	text-align: center;
@@ -183,6 +218,7 @@ text-align: center;
 .about_us p {
 	font-size: 20px;
 	line-height: 1.3em;
+	padding: 0 130px;
 }
 
 .service-wrp {
@@ -196,6 +232,10 @@ text-align: center;
 	padding: 0 10px;
 	position: relative;
 	margin-bottom: 30px;
+}
+
+.service span {
+	width: 99%;
 }
 
 .service-text {
@@ -242,6 +282,7 @@ text-align: center;
 
 .footer span {
 	display: block;
+
 }
 
 .footer h3 {
@@ -249,7 +290,7 @@ text-align: center;
 	margin-bottom: 40px;
 }
 
-.footer span p + p {
+.footer span {
 	margin-top: 6px;
 }
 
@@ -284,3 +325,109 @@ ul.icon-nav li a.gl:hover {
 .footer .icon-nav li + li {
 	margin-left: 23px;
 }
+/*MODAL STYLE*/
+.modal {
+	display: none;
+	background: #fff;
+	width: 775px;
+	min-height: 405px;
+	padding: 20px;
+	position: relative;
+}
+
+.modal#order p {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.modal#order h3 {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 8px;
+}
+
+.modal#order .form-block {
+	width: 342px;
+	height: 162px;
+	float: left;
+	margin: 38px 0 48px 15px;
+}
+
+.modal#order textarea.form-control {
+	height: 97px;
+	resize: none;
+	padding-top: 8px;
+}
+
+.modal#order .form-control {
+	margin-bottom: 30px;
+}
+
+.modal form .btn {
+	display: block;
+	font-size: 18px;
+	background-color: #bc2336;
+	width: 135px;
+	height: 45px;
+	border-radius: 3px;
+	margin: 0 auto;
+	line-height: 45px;
+	color: #fff;
+}
+
+.close {
+	position: absolute;
+	top: 8px;
+	right: 7px;
+	width: 43px;
+	height: 42px;
+	cursor: pointer;
+	border: 2px solid #bd2638;
+	border-radius: 50%;
+}
+
+.close:before,
+.close:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	width: 26px;
+	margin-right: -13px;
+	margin-top: -1px;
+	height: 2px;
+	background: #bd2638;
+}
+
+.close:before {
+	transform: rotate(45deg);
+}
+
+.close:after {
+	transform: rotate(-45deg);
+}
+
+select.form-control {
+	/*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+	background-image: url('../img/select-arrow.png');
+background-position: 97% 50%;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+
+/*.opened .select.form-control {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}*/
