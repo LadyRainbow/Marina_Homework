@@ -115,54 +115,54 @@ z-index: 999;
 	margin-top: 10px;
 }
 
-ul.menu-nav {
-	display: inline-block;
+.menu-nav {
+	float: left;
 	margin-top: 50px;
 	margin-left: 200px;
 }
 
-ul.icon-nav li {
+.icon-nav li {
 	display: inline-block;
 }
 
-ul.menu-nav li {
+.menu-nav li {
 	display: inline-block;;
 }
 
-ul.menu-nav li + li {
+.menu-nav li + li {
 	margin-left: 25px;
 }
 
-.header ul li a {
+.menu-nav li a {
 	font-size: 18px;
 }
 
-.header ul.icon-nav {
+.header .icon-nav {
 	float: right;
 	margin-top: 45px;
 	margin-right: 15px;
 }
 
-.header ul.icon-nav li + li {
+.header .icon-nav li + li {
 	margin-left: 33px;
 }
 
-ul.icon-nav li a {
+.icon-nav li a {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
 	background: url('../img/ic-sprite.png');
 }
 
-ul.icon-nav li a.vk {
+.icon-nav li a.vk {
 	background-position: -24px -48px;
 }
 
-ul.icon-nav li a.tw {
+.icon-nav li a.tw {
 	background-position: -24px -24px;
 }
 
-ul.icon-nav li a.gl {
+.icon-nav li a.gl {
 	background-position: -24px -0px;
 }
 
@@ -372,7 +372,7 @@ ul.icon-nav li a.gl:hover {
 	height: 45px;
 	border-radius: 3px;
 	margin: 0 auto;
-	line-height: 45px;
+	line-height: 39px;
 	color: #fff;
 }
 
@@ -408,26 +408,180 @@ ul.icon-nav li a.gl:hover {
 	transform: rotate(-45deg);
 }
 
-select.form-control {
-	/*for WebKit*/
- -webkit-appearance: none;
- /* for FF */
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  /* for IE */
-  -ms-appearance: none;
-  appearance: none!important;
-	background-image: url('../img/select-arrow.png');
-background-position: 97% 50%;
-background-repeat: no-repeat;
-cursor: pointer;
+.slicknav_menu {
+	display:none;
 }
 
+/*MEDIA*/
+@media (max-width: 1300px) {
+	.container {
+		width: 1156px;
+	}
+	.menu-nav {
+		margin-left: 113px;
+	}
+}
 
-/*.opened .select.form-control {
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	transform: rotate(180deg);
-}*/
+@media (max-width: 1172px) {
+	.container {
+		width: 950px;
+	}
+	.menu-nav {
+		margin-left: 55px;
+	}
+	.menu-nav li a {
+		font-size: 16px;
+	}
+	.header .icon-nav {
+		margin-right: 15px;
+	}
+	.header .icon-nav li + li {
+		margin-left: 20px;
+	}
+	.menu-nav li + li {
+		margin-left: 18px;
+	}
+	.service-text {
+		width: 180px;
+		height: 180px;
+		margin-top: -90px;
+		margin-left: -90px;
+	}
+	.service-text a {
+		width: 170px;
+		height: 170px;
+	}
+}
+
+@media (max-width: 949px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.slicknav_menu {
+	display:block;
+	float: right;
+	margin-top: 30px;
+	}
+	.menu-nav {
+		display: none;
+	}
+	.header .icon-nav{
+		display: none;
+	}
+	.about_us p {
+		font-size: 18px;
+		padding: 0 50px;
+	}
+	.service {
+		padding: 0 5px;
+		margin-bottom: 15px;
+	}
+	.service-text {
+		width: 140px;
+		height: 140px;
+		margin-top: -70px;
+		margin-left: -70px;
+	}
+	.service-text a {
+		width: 130px;
+		height: 130px;
+	}
+	.service-text a {
+		font-size: 16px;
+	}
+	.service-text a:hover {
+		border-width: 2px;
+	}
+	.modal {
+		width: 715px;
+	}
+	.modal#order .form-block {
+		width: 322px;
+		margin-bottom: 28px;
+	}
+}
+@media (max-width: 767px){
+	.service {
+		width: 50%;
+	}
+	.modal {
+		width: 600px;
+	}
+	.modal#order .form-block {
+		width: 260px;
+		margin-bottom: 28px;
+	}
+}
+@media (max-width: 639px) {
+	.call-to-action {
+		height: 500px;
+	}
+	.modal {
+		width: 450px;
+		left: 12px;
+	}
+	.modal#order .form-block {
+		width: 190px;
+		margin-bottom: 18px;
+	}
+}
+
+@media (max-width: 479px) {
+	.service {
+		width:100%;
+	}
+	.call-to-action-text h1 {
+		font-size: 40px;
+	}
+	.call-to-action-text span {
+    font-size: 12px;
+	}
+	.btn {
+		width: 100%;
+	}
+	.about_us h2 {
+		font-size: 26px;
+		margin-bottom: 25px;
+	}
+	.about_us p {
+		font-size: 14px;
+		padding: 0 30px;
+	}
+	.service-wrp {
+		margin-top: 40px;
+	}
+	.modal {
+		width: 310px;
+		min-height: 355px;
+		padding: 25px;
+	}
+	.modal#order .form-block {
+		width: 100%;
+		margin: 0 5px 5px 5px;
+	}
+	.modal#order .form-control {
+		margin-bottom: 20px;
+	}
+	.modal#order h3 {
+		margin-bottom: 30px;
+	}
+}
+
+.slicknav_icon-bar{
+	transition: transform 0.3s ease, background-color .3s ease;
+}
+.slicknav_open .slicknav_icon-bar:nth-child(1){
+	transform: rotate(45deg) translate(6px, 11px);
+	background-color: red;
+}
+.slicknav_open .slicknav_icon-bar:nth-child(2){
+	opacity: 0;
+}
+.slicknav_open .slicknav_icon-bar:nth-child(3){
+	transform: rotate(-45deg) translate(-1px, -5px);
+	background-color: red;
+	margin: 0;
+}
