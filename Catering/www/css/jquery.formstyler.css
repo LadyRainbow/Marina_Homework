@@ -262,7 +262,7 @@
 	box-shadow: inset 1px 1px 3px #DDD;
 }
 .jq-selectbox.focused .jq-selectbox__select {
-	border: 1px solid #5794BF;
+	border: 1px solid #bd2638;
 }
 .jq-selectbox.disabled .jq-selectbox__select {
 	border-color: #CCC;
