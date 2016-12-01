@@ -1,0 +1,13 @@
+.hover-mail { background-position: -0px -0px; width: 16px; height: 12px; }
+.hover-phone { background-position: -16px -0px; width: 16px; height: 16px; }
+.hover-skype { background-position: -0px -12px; width: 16px; height: 16px; }
+.mail { background-position: -16px -16px; width: 16px; height: 12px; }
+.phone { background-position: -0px -28px; width: 16px; height: 16px; }
+.skype { background-position: -16px -28px; width: 16px; height: 16px; }
+
+.ic-quality { background-position: -0px -0px; width: 93px; height: 67px; }
+.ic-blank { background-position: -0px -67px; width: 60px; height: 54px; }
+.ic-box { background-position: -0px -121px; width: 60px; height: 60px; }
+.ic-cart { background-position: -0px -181px; width: 60px; height: 52px; }
+.ic-price { background-position: -0px -233px; width: 60px; height: 60px; }
+.ic-time { background-position: -0px -293px; width: 60px; height: 60px; }

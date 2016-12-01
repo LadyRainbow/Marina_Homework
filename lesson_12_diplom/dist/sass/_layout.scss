@@ -1,0 +1,120 @@
+body {
+	background: url('../img/body-bg.jpg') no-repeat top center;
+	background-size: cover;
+	line-height: 1;
+	font-size: $standartFontSize;
+	color: $GreyTextColor;
+	font-family: 'Lato', sans-serif;
+
+
+}
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.header {
+	.header-top {
+		.vertical-align {
+			height: 85px;
+			.header-text {
+				text-align: center;
+				margin: 0 130px;
+				p {
+					&:first-child {
+						font-size: 1.286em;
+					}
+					&:last-child {
+						font-size: $standartFontSize;
+						margin: 0;
+					}
+				}
+			}
+			.header-icon {
+				background: url('../img/header-sprite.png');
+				width: 16px;
+				height: 16px;
+			}
+			.ic-phone {
+				background-position: -0px -28px;
+				margin-right: 24px;
+				&:hover {
+					background-position: -16px -0px;
+				}
+			}
+			.header-contacts {
+				p {
+					margin-bottom: 5px;
+					font-size: 0.857em;
+				}
+				margin-right: 30px;
+			}
+			.header-connect {
+				span {
+					font-size: 0.857em;
+				}
+				.ic-skype {
+					display: inline-block;
+					background-position: -16px -28px;
+					margin-right: 25px;
+					&:hover {
+						background-position: -0px -12px;
+					}
+				}
+				.ic-mail {
+					display: inline-block;
+					height: 12px;
+					background-position: -16px -16px;
+					margin-top: 15px;
+					margin-right: 25px;
+					&:hover {
+						background-position: -0px -0px;
+					}
+				}
+				padding-bottom: 5px;
+			}
+		}
+	}
+	.header-nav {
+		background-color: $lightGreyBg;
+		.list-inline {
+			margin: 30px 0 30px 58px;
+			li {
+				padding: 0;
+				&:first-child, &:nth-child(4), &:nth-child(5), &:nth-child(7), &:nth-child(8) {
+					margin-right: 31px;
+				}
+				&:nth-child(2) {
+					margin-right: 38px;
+				}
+				&:nth-child(6) {
+					margin-right: 33px;
+				}
+				a {
+					color: $darkGreyList;
+					font-size: 0.857em;
+					font-weight: bold;
+					&:hover {
+						color: $greenTextHover;
+						text-decoration: none;
+					}
+				}
+				&:nth-child(3) {
+					position: relative;
+					margin-right: 7px;
+					&::after {
+						content: "";
+						display: block;
+						background: url(../img/underline.png);
+						width: 168px;
+						height: 1px;
+						position: absolute;
+						left: 17px;
+						bottom: 2px;
+					}
+				}
+			}
+		}
+	}
+}

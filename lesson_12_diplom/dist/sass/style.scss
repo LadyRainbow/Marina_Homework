@@ -1,0 +1,120 @@
+// custom var
+@import "custom";
+
+// fonts
+@import "fonts";
+
+// bootstrap
+@import "bootstrap.min";
+
+// reset
+@import "reset";
+
+// default-class
+@import "default-class";
+
+// layout
+@import "layout";
+
+
+// style for carusel on index
+.carousel {
+	margin-right: -15px;
+}
+
+.carousel-caption{
+	left: 0;
+	right: auto;
+	bottom: 60px;
+	text-align: left;
+	padding: 20px 25px 20px 70px;
+	background: $LightGreen;
+		span {
+			color: $GreyTextColor;
+			font-size: 2.143em;
+		}
+}
+
+.carousel-indicators {
+	li {
+		width: 10px;
+		height: 10px;
+		border: 2px solid $LightGreen;
+		background-color: $LightGreen;
+	}
+	.active {
+		width: 15px;
+		height: 15px;
+		border: 2px solid $LightGreen;
+		background-color: transparent;
+	}
+}
+
+// sidebar-list
+.sidebar {
+	padding-left: 67px;
+	padding-top: 85px;
+	li {
+		list-style-type: none;
+		& + li {
+			margin-top: 18px;
+		}
+		a {
+			font-size: 0.857em;
+			color: $GreyTextColor;
+		}
+	}
+}
+
+.advantages {
+	@extend %indents70;
+	text-align: center;
+	.advantages-item {
+		display: inline-block;
+		background: url('../img/advantages-sprite.png') no-repeat center;
+		width: 60px;
+		height: 60px;
+	}
+	span {
+		display: block;
+		margin-top: 25px;
+		line-height: 1.35em;
+	}
+	.quality {
+		background-position: -0px -0px;
+		width: 93px;
+		height: 67px;
+	}
+	.price {
+		background-position: -0px -233px;
+	}
+	.cart {
+		background-position: -0px -181px;
+		height: 52px;
+	}
+	.time  {
+		background-position: -0px -293px;
+	}
+	.box {
+		background-position: -0px -121px;
+	}
+	.blank  {
+		background-position: -0px -67px;
+		height: 54px;
+	}
+}
+
+.buying {
+	@extend %indents70;
+	background-color: $lightGreyBg;
+	p {
+		text-align: justify;
+		line-height: 1.5em;
+	}
+	.dots {
+		background: url('../img/dots.png') no-repeat center;
+		width: 50px;
+		height: 10px;
+		margin: 25px auto 35px auto;
+	}
+}
